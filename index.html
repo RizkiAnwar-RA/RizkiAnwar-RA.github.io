@@ -134,6 +134,88 @@
       .contact { padding: 30px 24px; grid-template-columns: 1fr; }
       footer { flex-direction: column; }
     }
+    /* Editorial Minimalist — refined visual identity */
+    :root {
+      --site-primary: #A65D45;
+      --site-on-primary: #FFFFFF;
+      --site-secondary: #E9E2D6;
+      --site-on-secondary: #202B38;
+      --site-background: #F7F5F0;
+      --site-on-background: #202B38;
+      --surface: #FFFFFF;
+      --surface-soft: #EEEAE2;
+      --text-muted: #6D706F;
+      --line: #DEDAD2;
+      --site-font-body: Arial, Helvetica, sans-serif;
+      --site-font-heading: Georgia, 'Times New Roman', serif;
+    }
+    body { background: #F7F5F0; }
+    .nav { min-height: 96px; border-bottom: 1px solid var(--line); }
+    .brand { letter-spacing: -.035em; font-family: var(--site-font-body); }
+    .brand-mark { background: transparent; color: var(--site-on-background); border: 1px solid var(--site-on-background); transform: none; }
+    .brand small { color: var(--text-muted); letter-spacing: .14em; }
+    .navlinks { gap: 27px; }
+    .navlinks a { letter-spacing: .12em; font-size: 11px; }
+    .button { border-radius: 0; box-shadow: none; letter-spacing: .1em; }
+    .button:hover { transform: translateY(-2px); box-shadow: none; }
+    .hero { min-height: 650px; grid-template-columns: 1.12fr .88fr; gap: 60px; padding-top: 70px; padding-bottom: 90px; }
+    .hero:before { right: 0; top: 65px; width: 37%; height: 510px; background: #E9E2D6; opacity: 1; transform: none; border-radius: 0; }
+    .eyebrow, .section-kicker { letter-spacing: .18em; color: var(--site-primary); }
+    h1 { font-family: var(--site-font-heading); font-weight: 400; font-size: clamp(54px, 6.6vw, 88px); line-height: .98; letter-spacing: -.065em; }
+    h1 span { color: var(--site-primary); font-style: italic; }
+    .hero-sub { max-width: 440px; font-size: 16px; }
+    .text-link { border-bottom-color: var(--site-primary); }
+    .art-circle, .floating-tag { display: none; }
+    .hero-art { min-height: 470px; }
+    .portrait-card { width: min(340px, 78%); height: 430px; margin: 0 0 0 24px; border: 0; border-radius: 0; background: #E9E2D6; box-shadow: 18px 18px 0 #D8CFC1; }
+    .portrait-photo { object-position: center 24%; filter: saturate(.82); }
+    .section { padding: 92px 0; }
+    .section-head { margin-bottom: 42px; }
+    h2 { font-family: var(--site-font-heading); font-weight: 400; letter-spacing: -.045em; }
+    .about-grid { gap: 18px; }
+    .about-panel { background: #E9E2D6; color: #202B38; border-left: 4px solid var(--site-primary); }
+    .about-panel strong { font-family: var(--site-font-heading); font-weight: 400; }
+    .about-copy { border: 0; border-left: 1px solid var(--line); background: transparent; }
+    .stat { border: 0; border-top: 1px solid var(--line); background: transparent; padding: 20px 8px; }
+    .stat b { color: var(--site-primary); font-family: var(--site-font-heading); font-size: 27px; font-weight: 400; }
+    .skills { background: #202B38; color: #F7F5F0; }
+    .skills .section-intro { color: #C7C9C8; }
+    .skill-grid { gap: 0; border-top: 1px solid #59616A; }
+    .skill { border: 0; border-bottom: 1px solid #59616A; padding: 26px 20px 26px 0; background: transparent; }
+    .skill .num { color: #D99A80; }
+    .skill h3 { font-family: var(--site-font-heading); font-size: 21px; font-weight: 400; }
+    .skill p { color: #C7C9C8; }
+    .project { border: 0; border-top: 1px solid var(--line); border-radius: 0; box-shadow: none; background: transparent; padding: 26px 8px 24px 0; }
+    .project h3, .experience h3 { font-family: var(--site-font-heading); font-weight: 400; }
+    .project .pending { background: #EEEAE2; }
+    .experience { border-color: var(--line); }
+    .contact { background: #E9E2D6; color: #202B38; border-radius: 0; border-left: 4px solid var(--site-primary); }
+    .contact p { color: #5F625F; }
+    .contact .button { background: #202B38; color: #FFFFFF; box-shadow: none; }
+    footer { border-top: 1px solid var(--line); }
+    @media (max-width: 640px) {
+      .nav { min-height: 76px; }
+      .hero { gap: 16px; padding-top: 48px; }
+      .hero:before { right: -8%; top: 55%; width: 72%; height: 300px; }
+      .hero-art { min-height: 330px; }
+      .portrait-card { width: 230px; height: 290px; margin: 12px 0 0 12px; }
+      .section { padding: 62px 0; }
+      .skill { padding: 18px 10px 18px 0; }
+    }
+    /* Subtle plum accents and final editorial polish */
+    :root { --plum-accent: #702365; }
+    .brand-mark { border-color: var(--plum-accent); color: var(--plum-accent); }
+    .brand small { color: var(--plum-accent); }
+    .text-link:hover, .navlinks a:hover { color: var(--plum-accent); }
+    .project .project-type { color: var(--plum-accent); }
+    .section-kicker { font-weight: 700; }
+    .hero:before { background: linear-gradient(145deg, #E9E2D6 0%, #F0EBE3 100%); }
+    .portrait-card { box-shadow: 16px 16px 0 #D8CFC1; }
+    .contact { border-left-color: var(--plum-accent); }
+    @media (max-width: 640px) {
+      .hero:before { background: #E9E2D6; }
+      .portrait-card { box-shadow: 10px 10px 0 #D8CFC1; }
+    }
   </style>
 </head>
 <body>
@@ -187,11 +269,11 @@
 
     <section class="section skills" id="skills">
       <div class="container">
-        <div class="section-head"><div><div class="section-kicker">02 / Keahlian</div><h2>Tools & kompetensi.</h2></div><p class="section-intro">Perangkat dan bidang kompetensi yang tercantum dalam profil saya. Tingkat penguasaan dapat ditambahkan sesuai kemampuan aktual.</p></div>
+        <div class="section-head"><div><div class="section-kicker">02 / Keahlian</div><h2>Tools & kompetensi.</h2></div><p class="section-intro">Keahlian perangkat kerja dan kompetensi Inventory Management yang mendukung administrasi, pengolahan data, pemetaan, serta kegiatan operasional.</p></div>
         <div class="skill-grid">
-          <article class="skill"><div class="num">01 / DATA</div><h3>Microsoft Excel</h3><p>Pengolahan data dan spreadsheet. [Tambahkan fitur yang dikuasai.]</p></article>
+          <article class="skill"><div class="num">01 / DATA · MENENGAH</div><h3>Microsoft Excel</h3><p>Pengolahan data dan spreadsheet menggunakan SUM, AVERAGE, IF, dan VLOOKUP.</p></article>
           <article class="skill"><div class="num">02 / OFFICE</div><h3>Microsoft Office 365</h3><p>Perangkat produktivitas dan administrasi perkantoran.</p></article>
-          <article class="skill"><div class="num">03 / DESIGN</div><h3>AutoCAD</h3><p>Perangkat lunak gambar teknik. [Tambahkan tingkat penguasaan.]</p></article>
+          <article class="skill"><div class="num">03 / DESIGN · MENENGAH</div><h3>AutoCAD</h3><p>Menggunakan perangkat lunak gambar teknik untuk mendukung pekerjaan pemetaan dan dokumentasi teknis.</p></article>
           <article class="skill"><div class="num">04 / INVENTORY</div><h3>Inventory Management</h3><p>Sertifikasi kompetensi Inventory Management — BNSP.</p></article>
         </div>
       </div>
@@ -201,9 +283,9 @@
       <div class="container">
         <div class="section-head"><div><div class="section-kicker">03 / Portofolio</div><h2>Proyek & pengalaman.</h2></div><p class="section-intro">Ruang untuk menampilkan proyek kuliah, penelitian, dokumentasi magang, dan hasil pekerjaan yang relevan. Detail proyek akan ditambahkan setelah informasinya tersedia.</p></div>
         <div class="portfolio-grid">
-          <article class="project"><div class="project-type">Pengalaman Profesional</div><h3>Magang — PLN UP2K Riau</h3><p>Pengalaman magang di Unit Pelaksana Proyek Kelistrikan PLN UP2K Riau. Rincian posisi, periode, tugas, dan dokumentasi pekerjaan menunggu dilengkapi.</p><span class="pending">DETAIL PENGALAMAN PERLU DILENGKAPI</span></article>
-          <article class="project"><div class="project-type">Sertifikasi</div><h3>Inventory Management — BNSP</h3><p>Sertifikasi di bidang Inventory Management. Informasi nomor sertifikat, unit kompetensi, dan tahun penerbitan dapat ditambahkan.</p><span class="pending">SERTIFIKASI</span></article>
-          <article class="project"><div class="project-type">Proyek Akademik</div><h3>Proyek / Penelitian Teknik Industri</h3><p>[Tambahkan judul proyek, tujuan, metode, perangkat yang digunakan, dan hasil yang benar-benar diperoleh.]</p><span class="pending">MENUNGGU DATA PROYEK</span></article>
+          <article class="project"><div class="project-type">Pengalaman Profesional</div><h3>Magang — PLN UP2K Riau</h3><p>Magang di Divisi Perencanaan Proyek, di bawah Supervisor Konstruksi dan Perencanaan, September 2025–Februari 2026. Mendukung pemetaan jaringan distribusi menggunakan AutoCAD dan Google Earth, administrasi proyek, rekap dokumen kontrak/vendor, pengarsipan, serta koordinasi kegiatan proyek.</p><span class="pending">PENGALAMAN MAGANG</span></article>
+          <article class="project"><div class="project-type">Sertifikasi</div><h3>Inventory Management — BNSP</h3><p>Memiliki sertifikat kompetensi BNSP di bidang Inventory Management dengan nomor sertifikat 46100 43200 6456. Diterbitkan pada 03 Maret 2026 dan berlaku selama 3 tahun, hingga 03 Maret 2029.</p><span class="pending">SERTIFIKASI KOMPETENSI · 2026–2029</span></article>
+          <article class="project"><div class="project-type">Proyek Akademik · Tugas Akhir</div><h3>Analisis Beban Kerja Kurir Ekspres — PT Antaraja</h3><p>Menganalisis beban kerja operasional dan mental kurir serta kebutuhan tenaga kerja menggunakan Stopwatch Time Study, Full Time Equivalent (FTE), NASA-TLX, dan pendekatan 5W+1H. Hasil penelitian menunjukkan WKE 7,25 jam/hari, total FTE 12,38, kebutuhan ideal 13 kurir dari 6 kurir aktual (kekurangan 7 orang), serta skor NASA-TLX 69,67–79,33. Rekomendasi meliputi penambahan kurir, pemerataan beban dan wilayah, peningkatan koordinasi, serta pemantauan berkala.</p><span class="pending">PENELITIAN · 2026</span></article>
           <article class="project"><div class="project-type">Pendidikan</div><h3>S1 Teknik Industri</h3><p>Universitas Muhammadiyah Riau · 2022–2026. Riwayat pendidikan sebelumnya: SMAN 03 Kandis, SMPN 07 Kandis, dan SDN 03 Kandis.</p><span class="pending">RIWAYAT PENDIDIKAN</span></article>
         </div>
       </div>
@@ -212,8 +294,8 @@
     <section class="section" id="experience">
       <div class="container">
         <div class="section-head"><div><div class="section-kicker">04 / Perjalanan</div><h2>Pengalaman.</h2></div></div>
-        <div class="experience"><div class="date">[PERIODE MAGANG]</div><div><h3>Peserta Magang — PLN UP2K Riau</h3><p>Unit Pelaksana Proyek Kelistrikan. [Lengkapi jabatan, unit penempatan, aktivitas harian, tanggung jawab, dan pembelajaran selama magang.]</p></div></div>
-        <div class="experience"><div class="date">2022—2026</div><div><h3>S1 Teknik Industri — Universitas Muhammadiyah Riau</h3><p>Riwayat pendidikan sarjana. [Tambahkan topik tugas akhir atau proyek akademik jika relevan.]</p></div></div>
+        <div class="experience"><div class="date">September 2025—Februari 2026</div><div><h3>Peserta Magang — Divisi Perencanaan Proyek, PLN UP2K Riau</h3><p>Berada di bawah Supervisor Konstruksi dan Perencanaan. Mendukung pembuatan dan pembaruan peta jaringan distribusi, administrasi proyek (termasuk Nota Dinas), rekap data kontrak dan vendor, penyusunan flowchart proses, pengelolaan arsip digital, persiapan survei lapangan, serta rapat koordinasi dan evaluasi. Menggunakan Microsoft Excel, Word, AutoCAD, Google Earth, dan Visio. Memperoleh pengalaman dalam administrasi proyek, pengelolaan dokumen, pemetaan jaringan distribusi, dan koordinasi pekerjaan.</p></div></div>
+        <div class="experience"><div class="date">2022—2026</div><div><h3>S1 Teknik Industri — Universitas Muhammadiyah Riau</h3><p>Tugas akhir: “Analisis Beban Kerja Kurir Ekspres Menggunakan Metode FTE dan NASA-TLX dalam Penentuan Kebutuhan Tenaga Kerja (Studi Kasus: PT Antaraja)”. Penelitian menggunakan Stopwatch Time Study, FTE, NASA-TLX, dan pendekatan 5W+1H.</p></div></div>
       </div>
     </section>
 
